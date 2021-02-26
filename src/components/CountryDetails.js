@@ -5,9 +5,18 @@ import {Link} from "react-router-dom";
 class CountryDetails extends Component {
 
   state = {
+    countries: [],
     filteredCountries: [],
     filteredBorderCountries: []
   };
+
+  componentDidMount() {
+    this.setState(
+      {
+      countries: countries
+      }
+    )
+  }
 
   render() {
     let countryId = this.props.match.params.countryId;

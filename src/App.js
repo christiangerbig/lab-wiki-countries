@@ -24,15 +24,14 @@ class App extends Component {
       <div className="App">
         <Navbar/>
         <div class="container">
-          <div className="row">
+          <div className="row mt-5">
             <CountriesList countries={ countries }/>
-            <Route path="/country/:countryId:countryIndex" component={ CountryDetails }/>
+            <Route path="/country/:countryId" component={ CountryDetails }/>
           </div>
         </div>
       </div>
     )
   }
-
 }
 
 export default App;
